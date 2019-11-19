@@ -25,7 +25,7 @@ public static function find_this_query($sql){
     return $result_set;
 }
 
-private static function instantiation(){
+public static function instantiation($found_user){
     $the_object = new self;
 
     $the_object->id = $found_user["id"];
