@@ -15,12 +15,17 @@
                             //     echo $row["username"] . "</br>";
                             // }
 
-                            $found_user = User::find_user_by_id(1);
-                            $user = User::instantiation($found_user);
+                            // $found_user = User::find_user_by_id(1);
+                            // $user = User::instantiation($found_user);
                            
                             
-                            echo $user->id;
-                            echo "</br>";
+                            // echo $user->id;
+                            // echo "</br>";
+
+                            $users = User::find_all_users();
+                            foreach($users as $user){
+                                echo $user->id . "</br>"; 
+                            }
                         ?>
 
 
