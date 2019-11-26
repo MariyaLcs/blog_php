@@ -12,3 +12,13 @@ Section 5 - The User Class
 -Updating Users
 -Deleting Users
 -Photo Library
+
+
+Section 5 - The Session Class
+26/11/2019
+
+-Login in
+-Login out
+-Controlling Admin Access
+-Validating
+-Keeping Track of views
