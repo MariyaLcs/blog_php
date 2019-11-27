@@ -14,7 +14,7 @@ Section 5 - The User Class
 -Photo Library
 
 
-Section 5 - The Session Class
+Section 6 - The Session Class
 26/11/2019
 
 -Login in
