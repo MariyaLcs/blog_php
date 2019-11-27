@@ -1,16 +1,9 @@
-<?php ob_start(); 
-/*it buffers the content of the page, stores it in the buffer until you're ready to display it, 
-and after all the php function calls and everything, it "spits out" the content (automatically). 
-You can manually extract the data from the buffer in the place where you want with the ob_get_contents(); 
-
-It's good to use ob_start()  in combination with header("Location: ");  
-because when you're trying to use header, to redirect, you must not have any output before calling that function. 
-So ob_start();  will make sure to avoid errors such as "headers already sent" error. 
-Because it will allow you to send headers even though you have sent some content already. */
-?>
+<?php //ob_start(); ?>
 
 
-<?php include("init.php"); ?>
+<?php require_once("init.php"); ?>
+
+<?php if(!$session->is_signed_in()){redirect("login.php");}?>
 
 <!DOCTYPE html>
 <html lang="en">
