@@ -33,7 +33,7 @@ public static function find_this_query($sql){
     return $the_object_array;
 }
 
-public static function verify_user(){
+public static function verify_user($username, $password){
 
     global $database;
 
