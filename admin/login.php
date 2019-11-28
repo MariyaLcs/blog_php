@@ -1,4 +1,4 @@
-<?php require_once("init.php"); ?>
+<?php require_once("includes/header.php"); ?>
 
 <?php
 
@@ -6,12 +6,15 @@ if($session->is_signed_in()){
 redirect("index.php");
 }
 
-is(isset($_POST['submit'])){
+if(isset($_POST['submit'])){
 
 $username = trim($_POST['submit']);
 $password = trim($_POST['password']);
 
 //Method to check database user
+
+$user_found = User::verify_user($username, $password);
+
 
 if($user_found){
 

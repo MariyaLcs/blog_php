@@ -19,8 +19,6 @@ public static function find_user_by_id($user_id){
 
     return !empty($the_result_array) ? array_shift($the_result_array) : false;
 
-    //$found_user = mysqli_fetch_array($result_set);
-    return $found_user;
 }
 
 public static function find_this_query($sql){
@@ -33,6 +31,23 @@ public static function find_this_query($sql){
     }
 
     return $the_object_array;
+}
+
+public static function verify_user(){
+
+    global $database;
+
+    $username = $database->escape_string($username);
+    $password = $database->escape_string($password);
+
+    $sql = "SELECT * FROM users WHERE ";
+    $sql .= "username = '{$username}' ";
+    $sql .= "AND password = '{$password}' ";
+    $sql .= "LIMIT 1";
+
+    $the_result_array = self::find_this_query($sql);
+
+    return !empty($the_result_array) ? array_shift($the_result_array) : false;
 }
 
 public static function instantiation($the_record){
