@@ -5,7 +5,7 @@ class Session{
     private $signed_in = false;
     public $user_id;
     
-function __construct(){
+public function __construct(){
     session_start();
     $this->check_the_login();
 
@@ -31,10 +31,10 @@ public function logout(){
 private function check_the_login(){
     if(isset($_SESSION['user_id'])){
         $this->user_id = $_SESSION['user_id'];
-        $this->singed_in = true;
+        $this->signed_in = true;
     } else {
         unset($this->user_id);
-        $this->singed_in = false;
+        $this->signed_in = false;
     }
 }
 
