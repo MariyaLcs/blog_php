@@ -28,3 +28,13 @@ Section 7 - Files Basics
 
 -File Permissions
 -Paths
+
+Section 8 - Uploading Files
+29/11/2019
+
+-Upload files
+-PHP File Errors
+-Php.ini configurations
+-Moving Uploaded Files
+-Analyzing Upload File Structure
+
