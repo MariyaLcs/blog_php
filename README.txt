@@ -22,3 +22,9 @@ Section 6 - The Session Class
 -Controlling Admin Access
 -Validating
 -Keeping Track of views
+
+Section 7 - Files Basics
+29/11/2019
+
+-File Permissions
+-Paths
