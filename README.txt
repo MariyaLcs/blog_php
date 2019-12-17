@@ -38,11 +38,18 @@ Section 8 - Uploading Files
 -Moving Uploaded Files
 -Analyzing Upload File Structure
 
-Section 9 - CRUD: Create Methods
+Section 9/10/11 - CRUD: Create/Update/Delete Methods
 17/12/2019
 
 -Create Method
 -Delete Method
 -Read
 -Update
--Testing Our Methods
+-Testing Our 
+
+Section 12 - Abstracting and Improving
+17/12/2019
+
+-Escaping Values
+-Improving
+-Testing
