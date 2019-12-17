@@ -67,6 +67,11 @@ private function has_the_attribute($the_attribute){
 
    return array_key_exists($the_attribute, $object_properties);
 }
+
+    public function save(){
+        return isset($this->id) ? $this->update() : $this->create();
+    }
+
 //Create Method
 public function create(){
     global $database;
