@@ -67,7 +67,7 @@ private function has_the_attribute($the_attribute){
 
    return array_key_exists($the_attribute, $object_properties);
 }
-
+//Create Method
 public function create(){
     global $database;
 
@@ -85,7 +85,8 @@ public function create(){
         return false;
     }
        
-}//Create Method
+}
+//Update Method
 
 public function update(){
     global $database;
@@ -100,8 +101,15 @@ public function update(){
 
     $database->query($sql);
     return (mysqli_affected_rows($database->connection) == 1) ? true : false;
-
 }
+//Delete Method
+    public function delete(){
+        global $database;
+
+        $sql = "DELETE FROM users ";
+        $sql .= "WHERE id=" . $database->escape_string($this->id);
+        $sql .= "LIMITED 1";
+    }
 
 
 }//End of Class User
