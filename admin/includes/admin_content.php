@@ -17,10 +17,13 @@
 
                             // $user->create();
 
-                            $user = User::find_user_by_id(6);
-                            $user->last_name = "Williams";
+                            // $user = User::find_user_by_id(6);
+                            // $user->last_name = "Williams";
 
-                            $user->update();
+                            // $user->update();
+
+                            $user = User::find_user_by_id(6);
+                            $user->delete();
                         ?>
 
 
