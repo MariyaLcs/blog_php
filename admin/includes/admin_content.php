@@ -9,18 +9,22 @@
                         </h1>
                         
                         <?php
-                            // $user = new User();
-                            // $user->username = "Example_username";
-                            // $user->password = "Example_password";
-                            // $user->first_name = "Example_first_name";
-                            // $user->last_name = "Example_last_name";
+                            $user = new User();
+                            $user->username = "Example_username";
+                            $user->password = "Example_password";
+                            $user->first_name = "Example_first_name";
+                            $user->last_name = "Example_last_name";
 
-                            // $user->create();
+                            $user->create();
 
-                            $user = User::find_user_by_id(5);
-                            $user->last_name = "Williams";
+                            if(!$user->create()){
+                                die("Query Failed" . mysqli_error($database->connection));
+                            }
 
-                            $user->update();
+                            // $user = User::find_user_by_id(5);
+                            // $user->last_name = "Williams";
+
+                            // $user->update();
 
                             // $user = User::find_user_by_id(0);
                             // $user->delete();

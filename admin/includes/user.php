@@ -19,6 +19,7 @@ public static function find_user_by_id($user_id){
     $the_result_array = self::find_this_query("SELECT * FROM users WHERE id = $user_id LIMIT 1");
 
     return !empty($the_result_array) ? array_shift($the_result_array) : false;
+    return $found_user;
 
 }
 
@@ -69,6 +70,10 @@ private function has_the_attribute($the_attribute){
    return array_key_exists($the_attribute, $object_properties);
 }
 
+protected function properties(){
+    return get_object_vars($this);
+}
+
 public function save(){
     return isset($this->id) ? $this->update() : $this->create();
 }
@@ -77,12 +82,11 @@ public function save(){
 public function create(){
     global $database;
 
-    $sql = "INSERT INTO " . self::$db_table . " (username, password, first_name, last_name)";
-    $sql .= "VALUES ('";
-    $sql .= $database->escape_string($this->username) . "', '";
-    $sql .= $database->escape_string($this->password) . "', '";
-    $sql .= $database->escape_string($this->first_name) . "', '";
-    $sql .= $database->escape_string($this->last_name) . "')";
+    $properties = $this->properties();
+
+    $sql = "INSERT INTO " . self::$db_table . "(" . implode(",", array_keys($properties)) . ")";
+    $sql .= "VALUES ('" . implode("','", array_values($properties)) . "')";
+    
 
     if($database->query($sql)){
         $this->id = $database->the_insert_id();
