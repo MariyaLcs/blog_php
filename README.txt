@@ -53,3 +53,12 @@ Section 12 - Abstracting and Improving
 -Escaping Values
 -Improving
 -Testing
+
+Section 13 - The Photo Class
+18/12/2019
+
+-Table in our DB
+-Parent Class
+-Class Properties
+-Directory Paths
+-Dynamic Image Path
