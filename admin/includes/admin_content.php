@@ -31,14 +31,14 @@
                             // $user->save();
 
                             // $user = new User();
-                            // $user->username = "New 2020";
+                            // $user->username = "New user";
                             // $user->save();
 
-                            $users = User::find_all();
+                            // $users = User::find_all();
 
-                            foreach ($users as $user) {
-                                echo $user->username;
-                            }
+                            // foreach ($users as $user) {
+                            //     echo $user->username;
+                            // }
                         ?>
 
 
