@@ -9,19 +9,19 @@
                         </h1>
                         
                         <?php
-                            $user = new User();
-                            $user->username = "Example_username3";
-                            $user->password = "Example_password3";
-                            $user->first_name = "Example_first_name3";
-                            $user->last_name = "Example_last_name3";
+                            // $user = new User();
+                            // $user->username = "Example_username3";
+                            // $user->password = "Example_password3";
+                            // $user->first_name = "Example_first_name3";
+                            // $user->last_name = "Example_last_name3";
 
-                            $user->create();
+                            // $user->create();
 
                             
-                            // $user = User::find_user_by_id(5);
-                            // $user->last_name = "WilliamsNo";
+                            $user = User::find_user_by_id(5);
+                            $user->last_name = "WilliamsNoNo";
 
-                            // $user->update();
+                            $user->update();
 
                             // $user = User::find_user_by_id(0);
                             // $user->delete();
