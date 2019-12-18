@@ -3,6 +3,7 @@
 class User{
 
     protected static $db_table = "users";
+    protected static $db_table_fields = array('username', 'password', 'first_name', 'last_name');
     public $id;
     public $username;
     public $password;
@@ -71,7 +72,14 @@ private function has_the_attribute($the_attribute){
 }
 
 protected function properties(){
-    return get_object_vars($this);
+    
+    $properties = array();
+    foreach(self::$db_table_fields as $db_field){
+        if(property_exists($this, $db_field)){
+            $properties[$db_field] = $this->$db_field;
+        }
+    }
+    return $properties;
 }
 
 public function save(){
