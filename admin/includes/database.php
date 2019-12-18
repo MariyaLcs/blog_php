@@ -1,14 +1,6 @@
 <?php
 
 require_once("new_config.php");
-/*
-require_once() will attempt to include the file only once, 
-if it's already included elsewhere, it won't included it again. 
-Also, it will throw an error if the file path is not correct.
-
-include() will include the file even if that file is included elsewhere, 
-it will still include it. Also, it won't throw an error if the path is not correct.
-*/
 
 class Database {
 
@@ -19,8 +11,7 @@ class Database {
     }
 
     public function open_db_connection(){
-        //$this->connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-
+      
         $this->connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
         if($this->connection->connect_errno){

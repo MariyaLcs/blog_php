@@ -17,20 +17,20 @@
 
                             // $user->create();
 
-                            // $user = User::find_user_by_id(6);
-                            // $user->last_name = "Williams";
+                            $user = User::find_user_by_id(5);
+                            $user->last_name = "Williams";
 
-                            // $user->update();
+                            $user->update();
 
-                            // $user = User::find_user_by_id(6);
+                            // $user = User::find_user_by_id(0);
                             // $user->delete();
 
-                            $user = User::find_user_by_id(0);
-                            $user->password= "Santa";
-                            $user->save();
+                            // $user = User::find_user_by_id(0);
+                            // $user->password= "Santa";
+                            // $user->save();
 
                             // $user = new User();
-                            // $user->username = "New Year 2020";
+                            // $user->username = "New 2020";
                             // $user->save();
                         ?>
 
