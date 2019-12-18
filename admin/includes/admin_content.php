@@ -46,11 +46,13 @@
                             //     echo $photo->title;
                             // }
 
-                            $photos = new Photo();
-                            $photos->title = "Example1";
-                            $photos->size = 20;
+                            // $photos = new Photo();
+                            // $photos->title = "Example1";
+                            // $photos->size = 20;
                             
-                            $photos->create();
+                            // $photos->create();
+
+                            echo INCLUDES_PATH;
                         ?>
 
 
