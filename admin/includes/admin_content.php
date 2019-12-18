@@ -30,9 +30,15 @@
                             // $user->password= "Santa";
                             // $user->save();
 
-                            $user = new User();
-                            $user->username = "New 2020";
-                            $user->save();
+                            // $user = new User();
+                            // $user->username = "New 2020";
+                            // $user->save();
+
+                            $users = User::find_all();
+
+                            foreach ($users as $user) {
+                                echo $user->username;
+                            }
                         ?>
 
 
