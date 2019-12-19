@@ -1,5 +1,12 @@
 <?php include("includes/header.php"); ?>
 <?php if(!$session->is_signed_in()){redirect("login.php");}?>
+<?php
+
+if(isset($_POST['submit'])){
+    echo "<h1>HELLO</h1>";
+}
+
+?>
 
 
 
@@ -28,16 +35,17 @@
                             <small>Subheading</small>
                         </h1>
                         
-                        <form action="upload.php" method="post" enctype="multipart/form-data">
-                            <div class="form-group">
-                                <input type="text" name="title" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <input type="file" name="file_upload" class="form-control">
-                            </div>
-                            <input type="submit" name="submit">
-                        </form>
-
+                        <div class="col-md-6">
+                            <form action="upload.php" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <input type="text" name="title" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="file" name="file_upload" class="form-control">
+                                </div>
+                                <input type="submit" name="submit">
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <!-- /.row -->
