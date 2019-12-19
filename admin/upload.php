@@ -8,14 +8,14 @@ if(isset($_POST['submit'])){
     $photo = new Photo();
     $photo->title = $_POST['title'];
     $photo->set_file($_FILES['file_upload']);
-}
+
 
 if($photo->save()){
     $message = "Photo uploaded Succesfully";
 }else{
     $message = join("<br>", $photo->errors);
 }
-
+}
 ?>
 
 
