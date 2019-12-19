@@ -62,3 +62,10 @@ Section 13 - The Photo Class
 -Class Properties
 -Directory Paths
 -Dynamic Image Path
+
+Section 14 - Photo Deletion
+19/12/2019
+
+-Buiding Delete the Page
+-More Generic id's
+-Delete Method
