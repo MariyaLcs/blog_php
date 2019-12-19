@@ -2,8 +2,18 @@
 <?php if(!$session->is_signed_in()){redirect("login.php");}?>
 <?php
 
+$message = "";
+
 if(isset($_POST['submit'])){
-    echo "<h1>HELLO</h1>";
+    $photo = new Photo();
+    $photo->title = $_POST['title'];
+    $photo->set_file($_FILES['file_upload']);
+}
+
+if($photo->save()){
+    $message = "Photo uploaded Succesfully";
+}else{
+    $message = join("<br>", $photo->errors);
 }
 
 ?>
@@ -36,12 +46,13 @@ if(isset($_POST['submit'])){
                         </h1>
                         
                         <div class="col-md-6">
+                        <?php echo $message; ?>
                             <form action="upload.php" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <input type="text" name="title" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <input type="file" name="file_upload" class="form-control">
+                                    <input type="file" name="file_upload">
                                 </div>
                                 <input type="submit" name="submit">
                             </form>

@@ -36,7 +36,7 @@ class Photo extends Db_object{
             return false;
         }else{
             $this->filename = basename($file['name']);
-            $this->tmp_path = $file['tmp_path'];
+            $this->tmp_path = $file['tmp_name'];
             $this->type = $file['type'];
             $this->size = $file['size'];
         }
@@ -48,8 +48,8 @@ class Photo extends Db_object{
          }else{
              if(!empty($this->errors)){
                 return false;
-             }
-             if(empty($this->filename) || empty($this->tmp_path)){
+             }}
+        if(empty($this->filename) || empty($this->tmp_path)){
                 $this->errors[] = "The file was not available";
                 return false;
              }
@@ -63,7 +63,7 @@ class Photo extends Db_object{
 
              if(move_uploaded_file($this->tmp_path, $target_path)){
                  if($this->create()){
-                     unset($this->tmp_path);
+                     //unset($this->tmp_path);
                      return true;
                  }
              } else {
@@ -74,7 +74,7 @@ class Photo extends Db_object{
         }
      }
 
-}
+
 
 
 ?>
