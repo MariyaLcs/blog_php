@@ -18,15 +18,15 @@
                             // $user->create();
 
                             
-                            // $user = User::find_user_by_id(5);
+                            // $user = User::find_by_id(5);
                             // $user->last_name = "WilliamsNoNo";
 
                             // $user->update();
 
-                            // $user = User::find_user_by_id(0);
+                            // $user = User::find_by_id(0);
                             // $user->delete();
 
-                            // $user = User::find_user_by_id(0);
+                            // $user = User::find_by_id(0);
                             // $user->password= "Santa";
                             // $user->save();
 
@@ -52,7 +52,13 @@
                             
                             // $photos->create();
 
-                            echo INCLUDES_PATH;
+                            //echo INCLUDES_PATH;
+
+                            // $user = User::find_by_id(1);
+                            // echo $user->username;
+
+                            $photo = Photo::find_by_id(7);
+                            echo $photo->filename;
                         ?>
 
 
