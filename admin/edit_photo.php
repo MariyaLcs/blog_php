@@ -2,10 +2,20 @@
 <?php if(!$session->is_signed_in()){redirect("login.php");}?>
 
 <?php
-
-if(isset($_POST['update'])){
-    echo "Yes it works";
+if(empty($_GET['id'])){
+    redirect("../photos.php");
+}else{
+    $photo = Photo:: find_by_id($_GET['id']);
+    if(isset($_POST['update'])){
+        if($photo){
+            $photo->title = $_POST['title'];
+            $photo->caption = $_POST['caption'];
+            $photo->alternate_text = $_POST['alternate_text'];
+            $photo->description = $_POST['description'];
+        }
+    }
 }
+
 //$photos = Photo::find_all();
 
 ?>
@@ -40,7 +50,7 @@ if(isset($_POST['update'])){
                                 </div>                            
                                 <div class="form-group">
                                     <label for="caption">Caption</label>
-                                    <input type="text" name="caption" class="form-control">
+                                    <input type="text" name="caption" class="form-control" value="<?php echo $photo->title;?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="caption">Alternate Text</label>

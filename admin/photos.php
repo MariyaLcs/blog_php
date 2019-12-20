@@ -48,8 +48,8 @@ $photos = Photo::find_all();
                                     <tr>
                                         <td><img src="<?php echo $photo->picture_path(); ?>" alt="">
                                             <div class="pictures_link">
-                                                <a href="delete_photo.php/?id=<?php echo $photo->id; ?>">Delete</a>
-                                                <a href="#">Edit</a>
+                                                <a href="delete_photo.php?id=<?php echo $photo->id; ?>">Delete</a>
+                                                <a href="edit_photo.php?id=<?php echo $photo->id; ?>">Edit</a>
                                                 <a href="#">View</a>
                                             </div>
                                         </td>
