@@ -69,3 +69,10 @@ Section 14 - Photo Deletion
 -Buiding Delete the Page
 -More Generic id's
 -Delete Method
+
+Section 14 - Photo Edit Page
+20/12/2019
+
+-Installing WYSIWYG editor
+-HTML Form
+-Sidebar Styling
