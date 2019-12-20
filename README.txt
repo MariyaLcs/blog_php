@@ -76,3 +76,10 @@ Section 15 - Photo Edit Page
 -Installing WYSIWYG editor
 -HTML Form
 -Sidebar Styling
+
+Section 16 - Admin Users
+20/12/2019
+
+-Displaying Users
+-Placeholder Image
+-User CRUD
