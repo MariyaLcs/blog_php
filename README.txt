@@ -70,7 +70,7 @@ Section 14 - Photo Deletion
 -More Generic id's
 -Delete Method
 
-Section 14 - Photo Edit Page
+Section 15 - Photo Edit Page
 20/12/2019
 
 -Installing WYSIWYG editor
