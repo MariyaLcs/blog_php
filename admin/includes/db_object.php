@@ -10,7 +10,7 @@ class Db_object{
     
     public static function find_by_id($id){
         global $database;
-        $the_result_array = static::find_by_query("SELECT * FROM " . static::$db_table . " WHERE id = $id LIMIT 1");
+        $the_result_array = static::find_by_query("SELECT * FROM " . static::$db_table . " WHERE id= $id LIMIT 1");
     
         return !empty($the_result_array) ? array_shift($the_result_array) : false;
     }
@@ -62,7 +62,7 @@ class Db_object{
         global $database;
     
         $clean_properties = array();
-        foreach($this->properties() as $key=>$value){
+        foreach($this->properties() as $key => $value){
             $clean_properties[$key] = $database->escape_string($value);
         }
         return $clean_properties;
@@ -99,7 +99,7 @@ class Db_object{
         $properties = $this->clean_properties();
         $properties_pairs = array();
     
-        foreach($properties as $key=>$value){
+        foreach($properties as $key => $value){
             $properties_pairs[] = "{$key}='{$value}'";
         }
         

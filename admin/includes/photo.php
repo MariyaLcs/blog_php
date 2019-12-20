@@ -52,8 +52,8 @@ class Photo extends Db_object{
          }else{
              if(!empty($this->errors)){
                 return false;
-             }}
-        if(empty($this->filename) || empty($this->tmp_path)){
+             }
+            if(empty($this->filename) || empty($this->tmp_path)){
                 $this->errors[] = "The file was not available";
                 return false;
              }
@@ -75,9 +75,9 @@ class Photo extends Db_object{
                  return false;
              }
 
-        }
+            }
      
-
+        }
     public function delete_photo(){
 
         if($this->delete()){

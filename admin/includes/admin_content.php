@@ -57,8 +57,8 @@
                             // $user = User::find_by_id(1);
                             // echo $user->username;
 
-                            $photo = Photo::find_by_id(7);
-                            echo $photo->filename;
+                            // $photo = Photo::find_by_id(7);
+                            // echo $photo->filename;
                         ?>
 
 
