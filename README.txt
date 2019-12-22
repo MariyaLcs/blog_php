@@ -83,3 +83,10 @@ Section 16 - Admin Users
 -Displaying Users
 -Placeholder Image
 -User CRUD
+
+Section 17 - Photo Comments
+22/12/2019
+
+-Displaying All Comments
+-Display Specific Photo Comments
+-Comments CRUD
