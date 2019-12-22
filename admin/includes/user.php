@@ -13,7 +13,7 @@ class User extends Db_object{
     public $upload_directory = "images";
     public $image_placeholder = "http://placehold.it/400x400&text=image";
 
-        public function save_user_and_image(){
+        public function upload_photo(){
         if(!empty($this->errors)){
                 return false;
         }
@@ -30,10 +30,10 @@ class User extends Db_object{
             }
 
             if(move_uploaded_file($this->tmp_path, $target_path)){
-                if($this->create()){
+                
                     unset($this->tmp_path);
                     return true;
-                }
+                
             }else{
                 $this->errors[] = "The file directory does not have permission";
                 return false;
