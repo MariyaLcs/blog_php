@@ -90,3 +90,12 @@ Section 17 - Photo Comments
 -Displaying All Comments
 -Display Specific Photo Comments
 -Comments CRUD
+
+Section 18 - Gallery Dashboard
+23/12/2019
+
+-Views configurations
+-Users configurations
+-Comments configurations
+-Photos Count
+-Google API
