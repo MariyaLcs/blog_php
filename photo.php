@@ -1,5 +1,15 @@
 <?php
 
+require_once("admin/includes/init.php");
+
+if(empty($_GET['id'])){
+    redirect("index.php");
+}
+
+$photo = Photo::find_by_id($_GET['id']);
+
+echo $photo->title;
+
 if(isset($_POST['submit'])){
     echo "Hello";
 }
