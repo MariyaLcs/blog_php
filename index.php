@@ -13,7 +13,7 @@ $photos = Photo::find_all();
             <?php foreach($photos as $photo): ?>
                 
                     <div class="col-xs-6 col-md-3">
-                        <a class="thumbnail" href="">
+                        <a class="thumbnail" href="photo.php?id=<?php echo $photo->id; ?>">
                             <img class="home_page_photo img-responsive" src="admin/<?php echo $photo->picture_path(); ?> " alt="">
                         </a>
                     </div>       
