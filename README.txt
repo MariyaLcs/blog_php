@@ -99,3 +99,11 @@ Section 18 - Gallery Dashboard
 -Comments configurations
 -Photos Count
 -Google API
+
+Section 19. - Front-End: Gallery System.
+24/12/2019
+
+-Setting Up Index to Display Photos
+-Correcting Photos Alignment with Class
+-Coding the PHP in Photo.php
+-Home Page Link and Footer Modifications
