@@ -40,7 +40,7 @@
                                     <i class="fa fa-photo fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">7</div>
+                                    <div class="huge"><?php echo Photo::count_all(); ?></div>
                                     <div>Photos</div>
                                 </div>
                             </div>
