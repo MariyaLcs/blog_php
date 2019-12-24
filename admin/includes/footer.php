@@ -17,20 +17,19 @@
 
       function drawChart() {
 
-        var data = google.visualization.arrayToDataTable([
+        var data = google.visualization.arrayToDataTable([          
           ['Task', 'Hours per Day'],
-          ['Views',     <?php echo $session->count(); ?>],
-          ['Photos',      <?php echo $session->count(); ?>],
-          ['Users',  <?php echo $session->count(); ?>],
-          ['Comments', <?php echo $session->count(); ?>],
-          
+          ['Views',     <?php echo $session->count; ?>],
+          ['Photos',    <?php echo Photo::count_all(); ?>],
+          ['Users',     <?php echo User::count_all(); ?>],
+          ['Comments',  <?php echo Comment::count_all(); ?>]        
         ]);
 
         var options = {
           legend: 'none',
-          pieSliceText: 'label'
-          title: 'My Daily Activities',
-          backgroundColor: 'transparent';
+          pieSliceText: 'label',
+          backgroundColor: 'transparent',
+          title: 'Daily Activities'
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
