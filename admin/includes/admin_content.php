@@ -1,79 +1,117 @@
 <div class="container-fluid">
 
-                <!-- Page Heading -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Admin
-                            <small>Subheading</small>
-                        </h1>
-                        
-                        <?php
-                            // $user = new User();
-                            // $user->username = "Example_username4";
-                            // $user->password = "Example_password4";
-                            // $user->first_name = "Example_first_name4";
-                            // $user->last_name = "Example_last_name4";
-
-                            // $user->create();
-
-                            
-                            // $user = User::find_by_id(5);
-                            // $user->last_name = "WilliamsNoNo";
-
-                            // $user->update();
-
-                            // $user = User::find_by_id(0);
-                            // $user->delete();
-
-                            // $user = User::find_by_id(0);
-                            // $user->password= "Santa";
-                            // $user->save();
-
-                            // $user = new User();
-                            // $user->username = "New user";
-                            // $user->save();
-
-                            // $users = User::find_all();
-
-                            // foreach ($users as $user) {
-                            //     echo $user->username;
-                            // }
-
-                            // $photos = Photo::find_all();
-
-                            // foreach ($photos as $photo) {
-                            //     echo $photo->title;
-                            // }
-
-                            // $photos = new Photo();
-                            // $photos->title = "Example1";
-                            // $photos->size = 20;
-                            
-                            // $photos->create();
-
-                            //echo INCLUDES_PATH;
-
-                            // $user = User::find_by_id(1);
-                            // echo $user->username;
-
-                            // $photo = Photo::find_by_id(7);
-                            // echo $photo->filename;
-                        ?>
-
-
-
-                        <ol class="breadcrumb">
-                            <li>
-                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
-                            </li>
-                            <li class="active">
-                                <i class="fa fa-file"></i> Blank Page
-                            </li>
-                        </ol>
+    <!-- Page Heading -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Admin
+                <small>Subheading</small>
+            </h1>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-users fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">4</div>
+                                    <div>New Views</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">                                
+                                <span class="pull-left">View Details</span> 
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span> 
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <!-- /.row -->
 
+                    <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-photo fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">7</div>
+                                    <div>Photos</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">Total Photos in Gallery</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                    <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-user fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">8
+
+                                    </div>
+
+                                    <div>Users</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">Total Users</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                    <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-support fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">8</div>
+                                    <div>Comments</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">Total Comments</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                        </div> <!--First Row-->
+
+            
+        </div>
     </div>
-            <!-- /.container-fluid -->
+    <!-- /.row -->
+
+</div>
+         
