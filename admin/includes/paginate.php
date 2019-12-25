@@ -22,7 +22,7 @@ class Paginate{
         return ceil($this->items_total_count/$this->items_per_page);
     }
 
-    public function has_previuos(){
+    public function has_previous(){
         return $this->previous() >= 1 ? true : false;
     }
     public function has_next(){
