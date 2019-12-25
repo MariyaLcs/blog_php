@@ -21,6 +21,7 @@ $photos = Photo::find_by_query($sql);
     <!-- Blog Entries Column -->
     <div class="col-md-12">
         <div class="thumbnails row">
+
             <?php foreach($photos as $photo): ?>
                 
                     <div class="col-xs-6 col-md-3">
@@ -29,6 +30,17 @@ $photos = Photo::find_by_query($sql);
                         </a>
                     </div>       
             <?php endforeach;?>
+        </div>
+        <div class="row">
+            <ul class="pager">
+                <?php if($paginate->page_total() > 1){
+                    if($paginate->has_next()){
+                        echo "<li class='next'><a href='index.php?page={$paginate->next()}'>Next</a></li>";
+                    }
+                } ?>
+                
+                <li class='provious'><a href=''>Previous</a></li>
+            </ul>
         </div>
     </div>
 </div>
