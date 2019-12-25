@@ -5,7 +5,7 @@ class Paginate{
     public $items_per_page;
     public $items_total_count;
 
-    public function __constuct($page=1, $items_per_page=4, $items_total_count=0){
+    public function __construct($page=1, $items_per_page=4, $items_total_count=0){
         $this->current_page = (int)$page;
         $this->items_per_page = (int)$items_per_page;
         $this->items_total_count = (int)$items_total_count;
@@ -27,6 +27,10 @@ class Paginate{
     }
     public function has_next(){
         return $this->next() <= $this->page_total() ? true : false;
+    }
+
+    public function offset(){
+        return ($this->current_page -1) * $this->items_per_page;
     }
 }
 
