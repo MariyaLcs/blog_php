@@ -63,7 +63,11 @@ class User extends Db_object{
         return !empty($the_result_array) ? array_shift($the_result_array) : false;
     }
 
-    
+    public function ajax_save_user_image($user_image, $user_id){
+        $this->user_image = $user_image;
+        $this->id = $user_id;
+        $this->save();
+    }
 }//End of Class User
 
 
