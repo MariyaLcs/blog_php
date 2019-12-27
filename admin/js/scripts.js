@@ -25,7 +25,7 @@ $(document).ready(function() {
       type: "POST",
       success: function(data) {
         if (!data.error) {
-          alert(image_name);
+          alert(data);
         }
       }
     });
