@@ -110,3 +110,6 @@ Section 19 - Front-End: Gallery System
 
 Section 20 - Front-End: Pagination
 24/12/2019
+
+Section 21 - Extra Features
+27/12/2019
