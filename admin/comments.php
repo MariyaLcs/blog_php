@@ -27,9 +27,8 @@ $comments = Comment::find_all();
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Users                            
-                        </h1>
-                        <a href="add_user.php" class="btn btn-primary">Add User</a>
+                            All Comments                           
+                        </h1>                        
                         <div class="col-md-12">
                             <table class="table table-hover">
                                 <thead>
