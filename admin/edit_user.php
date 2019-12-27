@@ -27,7 +27,7 @@ if(isset($_POST['update'])){
                 $user->save();
                 $session->message("The user has been updated");
                //redirect("edit_user.php?id={$user->id}");
-                redirect("users.php");
+                //redirect("users.php");
             }           
         }
     }
@@ -56,7 +56,7 @@ if(isset($_POST['update'])){
                             users
                             <small>Subheading</small>
                         </h1>
-                        <div class="col-md-6">
+                        <div class="col-md-6 user_image_box">
                             <a href="#" data-toggle="modal" data-target="#photo-library"><img class="img-responsive" src="<?php echo $user->image_path_and_placeholder();?>" alt=""></a>
                         </div>
                         <form action="" method="post" enctype="multipart/form-data">
