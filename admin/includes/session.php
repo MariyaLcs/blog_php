@@ -11,8 +11,7 @@ function __construct(){
     session_start();
     $this->visitor_count();
     $this->check_the_login();
-    $this->check_message();
-    
+    $this->check_message();    
 }
 
 public function visitor_count(){
@@ -30,7 +29,6 @@ public function message($msg=""){
     } else {
         return $this->message;
     }
-
 }
 
 private function check_message(){
@@ -72,5 +70,5 @@ private function check_the_login(){
 }
 
 $session = new Session();
-
+$message = $session->message();
 ?>
