@@ -69,3 +69,9 @@
 #modal_sidebar {
   position: fixed !important;
 }
+
+/**********Login Page **********/
+
+#login-id label {
+  color: #fff;
+}
