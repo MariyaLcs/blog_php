@@ -9,6 +9,7 @@
 
     <!-- WYSIWYG -->
     <script src="https://tinymce.cachefly.net/4.1/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="js/dropzone.js"></script>
     <script src="js/scripts.js"></script>
 
     <script type="text/javascript">
