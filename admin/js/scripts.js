@@ -44,5 +44,14 @@ $(document).ready(function() {
       }
     });
   });
+
+  /******Edit Photo sidebar*******/
+  $(".info-box-header").click(function() {
+    $(".inside").slideToggle("fast");
+    $("#toggle").toggleClass(
+      "glyphicon-menu-down glyphicon, glyphicon-menu-up glyphicon"
+    );
+  });
+
   tinymce.init({ selector: "textarea" });
 });
