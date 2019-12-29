@@ -53,5 +53,11 @@ $(document).ready(function() {
     );
   });
 
+  /***********Delete Function***********/
+
+  $(".delete_link").click(function() {
+    return confirm("Are you sure you want to delete this item");
+  });
+
   tinymce.init({ selector: "textarea" });
 });
