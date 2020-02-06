@@ -1,10 +1,10 @@
-Section 4 - Database Class
+##Section 4 - Database Class
 -Setting up connection 
 -Initilizing files
 -Creating the Class
 -Creating Helper Methods
 
-Section 5 - The User Class
+##Section 5 - The User Class
 19/11/2019
 
 -Adding Users
@@ -14,7 +14,7 @@ Section 5 - The User Class
 -Photo Library
 
 
-Section 6 - The Session Class
+##Section 6 - The Session Class
 26/11/2019
 
 -Login in
@@ -23,13 +23,13 @@ Section 6 - The Session Class
 -Validating
 -Keeping Track of views
 
-Section 7 - Files Basics
+##Section 7 - Files Basics
 29/11/2019
 
 -File Permissions
 -Paths
 
-Section 8 - Uploading Files
+##Section 8 - Uploading Files
 29/11/2019
 
 -Upload files
@@ -38,7 +38,7 @@ Section 8 - Uploading Files
 -Moving Uploaded Files
 -Analyzing Upload File Structure
 
-Section 9/10/11 - CRUD: Create/Update/Delete Methods
+##Section 9/10/11 - CRUD: Create/Update/Delete Methods
 17/12/2019
 
 -Create Method
@@ -47,14 +47,14 @@ Section 9/10/11 - CRUD: Create/Update/Delete Methods
 -Update
 -Testing Our 
 
-Section 12 - Abstracting and Improving
+##Section 12 - Abstracting and Improving
 17/12/2019
 
 -Escaping Values
 -Improving
 -Testing
 
-Section 13 - The Photo Class
+##Section 13 - The Photo Class
 18/12/2019
 
 -Table in our DB
@@ -63,35 +63,35 @@ Section 13 - The Photo Class
 -Directory Paths
 -Dynamic Image Path
 
-Section 14 - Photo Deletion
+##Section 14 - Photo Deletion
 19/12/2019
 
 -Buiding Delete the Page
 -More Generic id's
 -Delete Method
 
-Section 15 - Photo Edit Page
+##Section 15 - Photo Edit Page
 20/12/2019
 
 -Installing WYSIWYG editor
 -HTML Form
 -Sidebar Styling
 
-Section 16 - Admin Users
+##Section 16 - Admin Users
 20/12/2019
 
 -Displaying Users
 -Placeholder Image
 -User CRUD
 
-Section 17 - Photo Comments
+##Section 17 - Photo Comments
 22/12/2019
 
 -Displaying All Comments
 -Display Specific Photo Comments
 -Comments CRUD
 
-Section 18 - Gallery Dashboard
+##Section 18 - Gallery Dashboard
 23/12/2019
 
 -Views configurations
@@ -100,7 +100,7 @@ Section 18 - Gallery Dashboard
 -Photos Count
 -Google API
 
-Section 19 - Front-End: Gallery System
+##Section 19 - Front-End: Gallery System
 24/12/2019
 
 -Setting Up Index to Display Photos
@@ -108,8 +108,8 @@ Section 19 - Front-End: Gallery System
 -Coding the PHP in Photo.php
 -Home Page Link and Footer Modifications
 
-Section 20 - Front-End: Pagination
+##Section 20 - Front-End: Pagination
 24/12/2019
 
-Section 21 - Extra Features
+##Section 21 - Extra Features
 27/12/2019
